@@ -1,9 +1,10 @@
 const form = document.getElementById("form");
-const day = document.getElementById("day").value;
-const month = document.getElementById("month").value;
-const year = document.getElementById("year").value;
+const day = document.getElementById("day");
+const month = document.getElementById("month");
+const year = document.getElementById("year");
 const inputFields = document.querySelectorAll(".input-field");
 const errorContainers = document.querySelectorAll(".error-container");
+const errorMessageDay = document.getElementById("error-message-day");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -22,6 +23,9 @@ form.addEventListener("submit", function (e) {
 function displayErrorMessage(container, message) {
   container.textContent = message;
   container.style.display = "block";
+  // day.style.borderColor = "red";
+  // month.style.borderColor = "red";
+  // year.style.borderColor = "red";
 }
 //Function to hide error message if any field is empty
 function hideErrorMessage(container) {

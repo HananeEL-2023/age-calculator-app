@@ -3,11 +3,3 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.error-container {
-  display: none;
-  color: red;
-}
-form {
-  display: flex;
-  justify-content: space-around;
-}

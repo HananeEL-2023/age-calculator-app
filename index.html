@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <main>
-        <form action="/submit" id="form">
+    <main class="main-form">
+        <form action="/submit" id="form" class="form">
             <div>
                 <label for="day">Day</label>
                 <input type="number" name="day" id="day" placeholder="DD" class="input-field">
-                <div class="error-container"></div>
+                <div class="error-container" id="error-message-day"></div>
             </div>
             <div>
                 <label for="month">Month</label>
@@ -28,11 +28,6 @@
             </div>
             <button type="submit">Submit</button>
         </form>
-        <div>
-            <p>Years</p>
-            <p>Months</p>
-            <p>Days</p>
-        </div>
     </main>
 
     <script src="js/age-calculator-app.js"></script>
